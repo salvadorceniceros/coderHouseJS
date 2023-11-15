@@ -56,12 +56,43 @@ if((nombre == "ANA") || (nombre == "Ana")){
     alert("El nombre ingresado es An4")
 }else{
     alert("El nombre ingresado no es Ana")
-}*/
-
-let nombreIngresado = prompt("Ingrese nombre:")
+}let nombreIngresado = prompt("Ingrese nombre:")
 
 if((nombreIngresado != "") && ((nombreIngresado == "ANA") || (nombreIngresado == "ana"))){
     alert("Hola Ana")
 }else{
-    alert("Ingresa un nombre vlalido")
+    alert("Ingresa un nombre valido")
+} */
+
+let cantidad = parseInt(prompt("Ingrese un número"))
+let palabra = prompt("Ingrese la palabra")
+let numero = parseInt(prompt("Ingrese un numero"))
+
+if (cantidad < 100){
+    alert("El número capturado es menor a cien")
+}
+else if (cantidad > 1000){
+    alert("El numero capturado es mayor a mil")
+}
+else if (cantidad < 1000){
+    alert("El número capturado es menor a mil")
+}
+else{
+    alert("El dato capturado no es un número")
+}
+
+if(palabra == "Hola"){
+    alert("La palabra es Hola")
+}else{
+    alert("La palabra es distinta a Hola")
+}
+
+if (numero >= 10 && numero <= 50){
+    alert("El número capturado "+numero+" cae entre 10 y 50")
+}else if (numero < 10){
+    alert("El numero "+numero+" capturado es menor a Diez")
+}else if (numero > 50){
+    alert("El número "+numero+" es mayor a 50")
+}else{
+    alert("El valor capturado: "+numero+" NO es un valor valido")
 }
