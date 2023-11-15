@@ -147,7 +147,7 @@ for (i = 1 ; i <= 10 ; i++){
     let resultado = tabla * i
     console.log(tabla+" X "+i+" = "+resultado)
 }
-*/
+
 
 for (i = 1; i <= 10; i++){
     console.log("Esta es la tabla del "+i+"\n")
@@ -168,3 +168,29 @@ do{
     console.log("El numero capturado fue "+numero)
 }while(parseInt(numero))
 console.log("El dato caputurado no fue un numero, fue "+numero)
+
+
+
+let numero = parseInt(prompt("Ingrese el número a validar:"))
+switch (numero){
+    case 1:
+        if (numero >= 0 || numero <=10){
+            console.log("El número proporcionado es entre 0 - 10")
+        }
+    break;
+    default:
+        console.log(numero)
+        console.log("El valor proporcionado no es valido")
+}
+console.log("Fuera del Switch");
+*/
+// Ejercicio de la 3ra. clase:
+
+let contador = 0
+let repeticiones = prompt("Canidad de veces a pedir número: ")
+
+for (i=0 ; i <= repeticiones ; i++){
+    let numero = prompt("ingrese un número: ")
+    contador = contador + numero
+    console.log("La suma de el valor caputurado es: "+numero)
+}
