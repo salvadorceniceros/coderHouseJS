@@ -183,14 +183,36 @@ switch (numero){
         console.log("El valor proporcionado no es valido")
 }
 console.log("Fuera del Switch");
-*/
+
 // Ejercicio de la 3ra. clase:
 
 let contador = 0
 let repeticiones = prompt("Canidad de veces a pedir número: ")
 
-for (i=0 ; i <= repeticiones ; i++){
-    let numero = prompt("ingrese un número: ")
+for (i=1 ; i <= repeticiones ; i++){
+    let numero = parseInt(prompt("ingrese un número: "))
+    let suma = contador + numero
+    console.log("La suma de el valor caputurado es: "+suma)
     contador = contador + numero
-    console.log("La suma de el valor caputurado es: "+numero)
 }
+console.log("Switch terminado");
+
+let numero = parseInt(prompt("Ingrese un número"))
+
+switch(numero){
+    case numero <= 10:
+        console.log("El número es menor de 10")
+        break;
+    default:
+        console.log("Valor capturado, es invalido");    
+}
+*/
+let numero2 = prompt("Ingrese el nñuero de repeticiones")
+let palabra = ""
+
+for (j=1 ; j<= numero2 ; j++){
+    let letra = prompt("Ingrese la letra")
+    palabra = palabra + letra
+    console.log("La palabra formada es: "+palabra+" ")
+}
+console.log("Proceso terminado!!!")
