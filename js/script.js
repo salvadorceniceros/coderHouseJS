@@ -206,7 +206,7 @@ switch(numero){
     default:
         console.log("Valor capturado, es invalido");    
 }
-*/
+
 let numero2 = prompt("Ingrese el nñuero de repeticiones")
 let palabra = ""
 
@@ -216,3 +216,4 @@ for (j=1 ; j<= numero2 ; j++){
     console.log("La palabra formada es: "+palabra+" ")
 }
 console.log("Proceso terminado!!!")
+*/
