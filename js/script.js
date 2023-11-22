@@ -216,4 +216,162 @@ for (j=1 ; j<= numero2 ; j++){
     console.log("La palabra formada es: "+palabra+" ")
 }
 console.log("Proceso terminado!!!")
+
+
+function saludar(){
+    console.log("¡Hola Salvador esta es tú primer función")
+}
+saludar();
+saludar();
+saludar();
+saludar();
+saludar();
+
+
+function solicitarNombre(){
+    let nombreIngresado = prompt("Ingrese el nombre:")
+    alert("El nombre ingresado es: "+nombreIngresado)
+    console.log("El nombre ingresado es: "+nombreIngresado)
+}
+solicitarNombre()
+solicitarNombre()
+solicitarNombre()
+solicitarNombre()
+solicitarNombre()
+
 */
+/*
+let numero = 0
+function suma(a,b){
+    numero = a+b
+    // console.log(numero)
+}
+
+function mensaje(resultado){
+    console.log(resultado)
+}
+// suma(100,33)
+// suma(10,3)
+
+let numA = parseInt(prompt("Ingrese el primer número a sumar: "))
+let numB = parseInt(prompt("Ingrese el segundo número a sumar: "))
+
+suma(numA,numB)
+mensaje(numero)
+*/
+
+/* function solicitarNombre(){
+    let ingresarNombre = prompt("Ingrese el nombre: ")
+    alert("El nombre ingresado es: "+ingresarNombre)
+}
+
+solicitarNombre() 
+
+function suma(){
+    let numero = 1+2
+    alert("La suma es: "+numero)
+}
+
+suma()
+
+
+function suma(uno, dos){
+    let numero = uno +  dos
+    console.log("La suma de los números es: "+numero)
+}
+
+suma(100,10)
+suma(99,990)
+
+let numA = parseInt(prompt("Ingrese el primer valor: "))
+let numB = parseInt(prompt("Ingrese el segundo valor: "))
+
+suma(numA,numB)
+
+
+let resultado = 0
+
+function sumar(num1 , num2){
+    numero = num1 + num2
+}
+
+function mostrar(resultado){
+    console.log(resultado)
+}
+
+
+let numeroA = parseInt(prompt("ingrese el primer valor: "))
+let numeroB = parseInt(prompt("Ingrese el segundo número: "))
+sumar(numeroA, numeroB)
+mostrar("la suma es: "+numero)
+
+mensaje("Bienvenidos al mundo de las sumas")
+
+function sumar(num1,num2){
+    return num1 + num2 
+}
+
+function mensaje(numero){
+    alert(numero)
+    console.log(numero)
+}
+
+let numero1 = parseInt(prompt("Ingrese el primero número a sumar:"))
+let numero2 = parseInt(prompt("Ingrese el segundo número a sumar:"))
+let valor = sumar(numero1,numero2)
+mensaje("La suma es: "+valor)
+*/
+
+/* function calculadora(num1, num2, operacion){
+    switch(operacion){
+        case "+":
+            return num1 + num2
+            break;
+        case "-":
+            return num1 - num2
+            break;
+        case "*":
+            return num1 * num2
+            break;
+        case "/":
+            return num1 / num2
+            break;
+        default:
+            return 0
+            break;
+    }
+}
+
+let numero1 = parseFloat(prompt("Ingrese el primer valor: "))
+let numero2 = parseFloat(prompt("Ingrese el segundo valor: "))
+
+ */
+
+// funciones anonimas:
+
+const suma = function (num1, num2) { return num1 + num2 }
+const resta = function (num1, num2) { return num1 - num2 }
+console.log("Resultados de una función anónima: "+suma(22,33))
+console.log(resta(44,99))
+
+// funciones flecha:
+
+const sumar = (num1, num2) => {return num1 + num2}
+const restar = (num1, num2) =>  num1 - num2
+console.log("Resultados de una función felcha => "+sumar(11,99))
+console.log(restar(88,55))
+
+const sumarn = (n1, n2) => n1 + n2
+console.log(sumarn(22,22))
+const restarn = (n1,n2) => n1-n2
+console.log(restarn(99,4))
+
+// si la función es una sola línea con retorno y un parametro puede evitar los ()
+
+const iva = x => x * 1.16
+let precioProducto = 500
+let descuento = 50
+// Calcular el precioProducto + IVA - Descuento
+let nuevoPrecio = restarn(sumarn(precioProducto, iva(precioProducto)), descuento)
+console.log(nuevoPrecio)
+console.log(iva(1000))
