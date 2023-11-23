@@ -16,29 +16,27 @@ function calculoPrecio(cantidad, precio){
     precioTotal +=  cantidad * precio
 }
 
+function calculoStock(cantidad, stock, precio){
+    if (stock >= cantidad){
+        // totalCompra += cantidad1 * precioProductoA
+        calculoPrecio(cantidad, precio)
+        alert("El precio total es de $"+(cantidad * precio))
+    }
+    else{
+        alert("No disponemos de esa cantidad, ya que el stock es de "+stock+" unidades")
+    }
+}
+
 for (i=0 ; i < cantidadCompras ; i++){
     totalCompra = 0
     let compra1 = prompt("Ingrese el nombre del producto que quiere comprar: \n -Mesas \n -Sillas")
     let cantidad1 = prompt("Ingrese la cantidad de productos que quere comprar: ")
 
     if ( compra1 == "Mesas" ){
-        if (stockProductoA >= cantidad1){
-            // totalCompra += cantidad1 * precioProductoA
-            calculoPrecio(cantidad1, precioProductoA)
-            alert("El precio total es de $"+(cantidad1*precioProductoA))
-        }
-        else{
-            alert("No disponemos de esa cantidad, ya que el stock es de "+stockProductoA+" Mesas")
-        }
+        calculoStock(cantidad1, stockProductoA, precioProductoA)
     }
     else if( compra1 == "Sillas" ){
-        if (stockProductoB >= cantidad1){
-            // totalCompra += cantidad1*precioProductoB
-            calculoPrecio(cantidad1, precioProductoB)
-            alert("El precio total es de $"+cantidad1*precioProductoB)
-        }else{
-            alert("No disponemos de esa cantidad, ya que nuestro stock es de "+stockProductoB+" Sillas")
-        }
+        calculoStock(cantidad1, stockProductoB, precioProductoB)
     }else{
         alert("No tenemos ese producto")
     }

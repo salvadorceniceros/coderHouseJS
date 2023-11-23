@@ -260,6 +260,7 @@ suma(numA,numB)
 mensaje(numero)
 */
 
+<<<<<<< HEAD
 /* function solicitarNombre(){
     let ingresarNombre = prompt("Ingrese el nombre: ")
     alert("El nombre ingresado es: "+ingresarNombre)
@@ -375,3 +376,27 @@ let descuento = 50
 let nuevoPrecio = restarn(sumarn(precioProducto, iva(precioProducto)), descuento)
 console.log(nuevoPrecio)
 console.log(iva(1000))
+=======
+let numero = prompt ("Ingrese un número:")
+
+switch(true){
+    case (numero >= 0 && numero <=9):
+        console.log("El número ingresado es entre 0 y 10")
+        break;
+    case (numero >=10 && numero <=19):
+        console.log("El número ingresado es entre el 11 y 20")
+        break;
+    case (numero >=20 && numero <=49):
+        console.log("El número ingresado es menor a 50")
+        break;
+    case (numero >=50 && numero <=99):
+        console.log("El número proporcionado es menor a 100")
+        break;
+    case (numero >100):
+        console.log("El núemero proporcionado es mayor a 100")
+        break;
+    default:
+        console.log("El dato ingresado no es un número")
+        break;
+}
+>>>>>>> 86f63ac28c78ace4a224bfd4a8f115697ba8fd15
