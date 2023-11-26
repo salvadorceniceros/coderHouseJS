@@ -216,7 +216,7 @@ for (j=1 ; j<= numero2 ; j++){
     console.log("La palabra formada es: "+palabra+" ")
 }
 console.log("Proceso terminado!!!")
-*/
+
 
 let numero = prompt ("Ingrese un número:")
 
@@ -240,3 +240,26 @@ switch(true){
         console.log("El dato ingresado no es un número")
         break;
 }
+*/
+
+let productoA = {
+    nombre : "Mesas",
+    precio : 500,
+    stock : 50 
+}
+
+// función constructora
+function Producto(nombre,precio,stock){
+    this.nombre= nombre
+    this.precio= precio
+    this.stock= stock
+}
+
+const productoB = new Producto("Sillas", 550, 50)
+const productoC = new Producto("Laparas", 100, 1000)
+const productoD = new Producto("Lapices", 5, 10000)
+
+console.log(productoA)
+console.log(productoB)
+console.log(productoC)
+console.log(productoD)

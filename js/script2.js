@@ -6,6 +6,23 @@ let nombreProductoB = "Silla"
 let precioProductoB = 550
 let stockProductoB = 50
 
+let productoA = {
+    nombre: "Mesa",
+    precio: 100,
+    stock: 20
+}
+// Uso de Objetos en JS
+
+function Producto(nombre,precio,stock){
+    this.nombre = nombre
+    this.precio = precio
+    this.stock = stock
+}
+
+const productoB = new ("Silla",550,50)
+const productoC = new ("Lapara", 100, 1000)
+const productoD = new ("Lapices", 5, 10000)
+
 let precioTotal = 0
 let total = 0
 let compras = 0
