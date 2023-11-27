@@ -2,9 +2,21 @@ let nombreProductoA = "Mesas"
 let precioProductoA = 955
 let stockProductoA = 10
 
+let productoA = {
+                    Nombre: "Mesas",
+                    precio: 955,
+                    stock: 10
+}
+
 let nombreProductoB = "Sillas"
 let precioProductoB = 550
 let stockProductoB = 50
+
+let productoB ={
+                    nombre: "Sillas",
+                    precio: 550,
+                    stock: 50
+}
 
 let precioTotal = 0
 let totalCompra = 0
@@ -33,7 +45,7 @@ for (i=0 ; i < cantidadCompras ; i++){
     let cantidad1 = prompt("Ingrese la cantidad de productos que quere comprar: ")
 
     if ( compra1 == "Mesas" ){
-        calculoStock(cantidad1, stockProductoA, precioProductoA)
+        calculoStock(cantidad1, productoA.stock, productoA.precio)
     }
     else if( compra1 == "Sillas" ){
         calculoStock(cantidad1, stockProductoB, precioProductoB)

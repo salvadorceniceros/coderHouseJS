@@ -260,7 +260,6 @@ suma(numA,numB)
 mensaje(numero)
 */
 
-<<<<<<< HEAD
 /* function solicitarNombre(){
     let ingresarNombre = prompt("Ingrese el nombre: ")
     alert("El nombre ingresado es: "+ingresarNombre)
@@ -346,7 +345,7 @@ mensaje("La suma es: "+valor)
 let numero1 = parseFloat(prompt("Ingrese el primer valor: "))
 let numero2 = parseFloat(prompt("Ingrese el segundo valor: "))
 
- */
+
 
 // funciones anonimas:
 
@@ -376,27 +375,20 @@ let descuento = 50
 let nuevoPrecio = restarn(sumarn(precioProducto, iva(precioProducto)), descuento)
 console.log(nuevoPrecio)
 console.log(iva(1000))
-=======
-let numero = prompt ("Ingrese un número:")
+ 
+let nombre = "Salvador"
+let edad = 41
+let direccion = "Campo de Claveles 641"
 
-switch(true){
-    case (numero >= 0 && numero <=9):
-        console.log("El número ingresado es entre 0 y 10")
-        break;
-    case (numero >=10 && numero <=19):
-        console.log("El número ingresado es entre el 11 y 20")
-        break;
-    case (numero >=20 && numero <=49):
-        console.log("El número ingresado es menor a 50")
-        break;
-    case (numero >=50 && numero <=99):
-        console.log("El número proporcionado es menor a 100")
-        break;
-    case (numero >100):
-        console.log("El núemero proporcionado es mayor a 100")
-        break;
-    default:
-        console.log("El dato ingresado no es un número")
-        break;
+const persona1 = {nombre: "Salvador", edad: 41
+, direccion: "Campo de Claveles 641"}
+*/
+// Constructores de objetos en JS
+
+function Persona(nombre, edad. calle){
+    this.nombre = nombre;
+    this.edad = edad;
+    this.calle = calle;
 }
->>>>>>> 86f63ac28c78ace4a224bfd4a8f115697ba8fd15
+const persona1 = new Persona("Salvador", 41, "Campo de claveles 641");
+const persona2 = new Persona("Berenice", 41, "Avenida Juárez y calle 17");
